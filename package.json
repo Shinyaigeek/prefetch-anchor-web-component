@@ -1,0 +1,12 @@
+{
+  "name": "prefetch-container-web-component",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Shinyaigeek/prefetch-children-web-component.git",
+  "author": "shinyaigeek <philispaxil@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "bili": "^5.0.5",
+    "typescript": "^4.3.2"
+  }
+}
