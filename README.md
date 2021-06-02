@@ -1,6 +1,8 @@
 # prefetch-anchor
 web components anchor element for prefetching target's html.
 
+Be careful not to overuse
+
 ## Example
 
 ```html
