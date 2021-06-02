@@ -16,8 +16,8 @@
     "lib/main.old.js"
   ],
   "scripts": {
-    "build:esm": "swc ./src/main.ts -o lib/main.old.js --config module.type=es6",
-    "build:esm:modern": "swc ./src/main.ts -o lib/main.js --config-file .swcrc",
-    "build": "yarn build:esm && yarn build:esm:modern"
+    "build:esm:old": "swc ./src/main.ts -o lib/main.old.js --config-file .old.swcrc",
+    "build:esm": "swc ./src/main.ts -o lib/main.js --config-file .modern.swcrc",
+    "build": "yarn build:esm && yarn build:esm:old"
   }
 }
