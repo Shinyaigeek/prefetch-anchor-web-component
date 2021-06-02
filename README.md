@@ -14,8 +14,8 @@ Be careful not to overuse
   <body>
     hello prefetch anchor!!
 
-    <a>resource</a>
-    <a is="prefetch-anchor">resource which you want to preload</a>
+    <a href="resource.html">resource</a>
+    <a is="prefetch-anchor" href="resource-which-you-want-to-prefetch.html">resource which you want to prefetch</a>
   </body>
 </html>
 ```
