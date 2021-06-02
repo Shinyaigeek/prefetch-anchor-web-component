@@ -1,16 +1,23 @@
 {
-  "name": "prefetch-container-web-component",
+  "name": "prefetch-anchor-web-component",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/Shinyaigeek/prefetch-children-web-component.git",
+  "main": "lib/main.js",
+  "repository": "https://github.com/Shinyaigeek/prefetch-anchor-web-component.git",
   "author": "shinyaigeek <philispaxil@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "bili": "^5.0.5",
+    "@swc/cli": "^0.1.45",
+    "@swc/core": "^1.2.59",
     "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.3.2"
   },
+  "files": [
+    "lib/main.js",
+    "lib/main.old.js"
+  ],
   "scripts": {
-    "build": "bili --format esm"
+    "build:esm": "swc ./src/main.ts -o lib/main.old.js --config module.type=es6",
+    "build:esm:modern": "swc ./src/main.ts -o lib/main.js --config-file .swcrc",
+    "build": "yarn build:esm && yarn build:esm:modern"
   }
 }
